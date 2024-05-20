@@ -40,6 +40,7 @@ These instructions will help you set up and run the project on your local machin
 Start the Node.js server:
 ```bash
 node server.mjs
+```
 The server will start on http://localhost:3000.
 
 Project Structure
