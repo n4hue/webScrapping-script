@@ -1,36 +1,64 @@
-# IP Information Fetcher
+# IP Information Lookup
 
-This code snippet is a JavaScript program that fetches and logs information about an IP address using the ipinfo.io API.
+This project is a simple web application that allows users to look up information about an IP address. The application uses Tailwind CSS for styling and a Node.js server with Express to handle API requests. The server fetches data from the `ip-geo-location` API on RapidAPI.
 
-## Installation
+## Features
 
-No installation is required to run this code. It can be executed directly in a JavaScript environment.
+- Look up geographical and network information for a given IP address.
+- Clean and responsive user interface built with Tailwind CSS.
+- Secure API key management using environment variables.
 
-## Usage
+## Getting Started
 
-1. Set the `ip` and `token` variables with the desired IP address and API token respectively.
-2. Uncomment the `fetch` and `json` lines to make the API request and parse the response.
-3. Run the `obtenerInformacionIP` function to fetch and log the IP information.
+These instructions will help you set up and run the project on your local machine.
 
-## Example
+### Prerequisites
 
-```javascript
-const ip = "#";
-const token = '#';
-const url = `https://ipinfo.io/${ip}?token=${token}`;
+- Node.js (v12.17.0 or higher)
+- npm (Node Package Manager)
 
-async function obtenerInformacionIP() {
-    try {
-        const response = await fetch(`https://ipinfo.io/${ip}?token=${token}`);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-        } else {
-            throw new Error('Error al obtener la información de IP');
-        }
-    } catch (error) {
-        console.error(error);
-    }
-}
+### Installation
 
-obtenerInformacionIP();
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/ip-information-lookup.git
+    cd ip-information-lookup
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Create a `.env` file in the root directory and add your RapidAPI key:
+    ```env
+    RAPIDAPI_KEY=your-api-key-here
+    ```
+
+### Running the Server
+
+Start the Node.js server:
+```bash
+node server.mjs
+The server will start on http://localhost:3000.
+
+Project Structure
+java
+Copy code
+ip-information-lookup/
+├── .env
+├── package.json
+├── server.mjs
+└── public/
+    ├── index.html
+    └── main.js
+Usage
+Open your web browser and navigate to http://localhost:3000.
+Enter an IP address in the input field and click "Lookup".
+View the IP information displayed on the page.
+Technologies Used
+Node.js
+Express
+Tailwind CSS
+Fetch API
+RapidAPI
