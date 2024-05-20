@@ -43,8 +43,7 @@ node server.mjs
 The server will start on http://localhost:3000.
 
 Project Structure
-java
-Copy code
+```java
 ip-information-lookup/
 ├── .env
 ├── package.json
@@ -52,13 +51,17 @@ ip-information-lookup/
 └── public/
     ├── index.html
     └── main.js
-Usage
-Open your web browser and navigate to http://localhost:3000.
-Enter an IP address in the input field and click "Lookup".
-View the IP information displayed on the page.
-Technologies Used
-Node.js
-Express
-Tailwind CSS
-Fetch API
-RapidAPI
+```
+
+### Usage
+- Open your web browser and navigate to http://localhost:3000.
+- Enter an IP address in the input field and click "Lookup".
+- View the IP information displayed on the page.
+  
+  
+### Technologies Used
+- Node.js
+- Express
+- Tailwind CSS
+- Fetch API
+- RapidAPI
