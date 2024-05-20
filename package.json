@@ -1,0 +1,31 @@
+{
+  "name": "webscrapping-script",
+  "version": "1.0.0",
+  "description": "This code snippet is a JavaScript program that fetches and logs information about an IP address using the ipinfo.io API.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n4hue/webScrapping-script.git"
+  },
+  "author": "n4hue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n4hue/webScrapping-script/issues"
+  },
+  "homepage": "https://github.com/n4hue/webScrapping-script#readme",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}
